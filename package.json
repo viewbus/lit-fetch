@@ -1,0 +1,12 @@
+{
+  "name": "lit-fetch",
+  "version": "1.0.7",
+  "description": "",
+  "main": "litfetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "author": "",
+  "license": "ISC"
+}
