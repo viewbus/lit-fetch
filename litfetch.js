@@ -35,7 +35,7 @@ function encodeToUrlQuery(url, data) {
         return url
     }
 
-    let queryExist = url.indexOf("?")
+    let queryExist = url.indexOf("?") > 0
     let queryList = []
 
     for (let key in data) {
@@ -43,7 +43,7 @@ function encodeToUrlQuery(url, data) {
         queryList.push(`${key}=${encodeURIComponent(value)}`)
     }
 
-    return url + (queryExist ? '&' : '') + queryList.join('&')
+    return url + (queryExist ? '&' : '?') + queryList.join('&')
 }
 
 function downloadFile(contentDisposition, fileName, fileStream) {
